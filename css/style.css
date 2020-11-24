@@ -6,10 +6,11 @@
     font-family: "Highline";
     src: url("/fonts/Highline.otf");
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 html,
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -107,6 +108,12 @@ body {
     padding: 0;
 }
 
+.wa-button-mobile{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
 .font-audrey{
     font-family: 'Audrey', sans-serif;
     color: #DDA74F;
@@ -118,6 +125,9 @@ body {
 
 .bg-black{
     background: #272A31;
+}
+.navbar{
+    border-bottom:1px solid #DDA74F;
 }
 .navbar-brand{
     font-family: "Highline";
@@ -159,8 +169,15 @@ body {
     .navbar-brand{
         flex-grow: 1;
         text-align: center;
+        margin: 0;
+
     }
-    
+    .wa-button-mobile{
+        display: block;
+    }
+    .wa-button{
+        display: none;
+    }
     
   }
 
@@ -174,6 +191,12 @@ body {
     .navbar-brand{
         flex-grow: 1;
         text-align: center;
+        margin: 0;
     }
-  
+    .wa-button-mobile{
+        display: block;
+    }
+    .wa-button{
+        display: none;
+    }
   }
