@@ -6,12 +6,10 @@
     font-family: "Highline";
     src: url("/fonts/Highline.otf");
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html{
-    font-family: Calibri, sans-serif;
-}
+
 html,
 body {
+    font-family: 'Roboto'!important;
     margin: 0;
     padding: 0;
     border: 0;
@@ -76,6 +74,13 @@ body {
 .card{
     margin:20px 10px;
 }
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+
 .card-noborder{
     border: none;
 }
@@ -109,9 +114,11 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 600;
-    font-family: 'Open Sans';
 }
 
+.heading{
+    font-weight: lighter;
+}
 .wa-button-mobile{
     margin: 0;
     padding: 0;
@@ -120,7 +127,8 @@ body {
 }
 
 .font-audrey{
-    font-family: 'Audrey', sans-serif;
+    font-family: 'Audrey';
+    font-size: 40px;
     color: #DDA74F;
 }
 .keuntungan-icon{
@@ -165,6 +173,10 @@ body {
 #footer div {
     color: #B0B0B0;
 }
+.open-hour{
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     /* For tablets: */
     .navbar{
@@ -182,6 +194,19 @@ body {
     }
     .wa-button{
         display: none;
+    }
+    .open-hour{
+        text-align: left;
+    }
+    .footer-heading{
+        margin-top: 50px;
+    }
+    .font-audrey{
+        font-size: 26px;
+    }
+    .btn-carousel{
+        margin-top: 0;
+
     }
     
   }
@@ -204,4 +229,150 @@ body {
     .wa-button{
         display: none;
     }
+    .open-hour{
+        text-align: left;
+    }
+    .keuntungan-heading{
+        font-size: 18px;
+    }
+    .font-audrey{
+        font-size: 26px;    
+    }
+    .carousel-text{
+        font-size: 30px;
+    }
+    .text-overlay h3{
+        font-size: 35px;
+    }
+    .text-overlay .font-audrey{
+        font-size: 60px;
+    }
+    .btn-carousel{
+        margin-top: 30px;
+    }
+    .float-mobile{
+        display: block;
+    
+    }
+    .float{
+        display: none;
+    }
   }
+  @media only screen and (min-width: 769px) {
+    .carousel-text{
+        font-size: 30px;
+    }
+    .text-overlay h3{
+        font-size: 40px;
+    }
+    .text-overlay .font-audrey{
+        font-size: 80px;
+    }
+    .btn-carousel{
+        margin-top: 30px;
+    }
+    .btn-about{
+        font-size: 20px;
+    }
+    .float-mobile{
+        display: none;
+    }
+    .float{
+        display: block;
+    }
+  }
+  @media only screen and (max-width: 415px) {
+    .carousel-text{
+        font-size: 20px;
+    }
+    .text-overlay h3{
+        font-size: 22px;
+    }
+    .text-overlay .font-audrey{
+        font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .carousel-text{
+        font-size: 16px;
+    }
+    .text-overlay h3{
+        font-size: 18px;
+    }
+    .text-overlay .font-audrey{
+        font-size: 35px;
+    }
+    .btn-carousel{
+        font-size: 14px;
+    }
+  }
+
+
+  .font-abu{
+      color: #8C8C8C;
+  }
+  .font-about{
+      color: #5E5E5E;
+  }
+
+  .card-body-color{
+      background-color: #FAFAFA;
+  }
+
+  .list-nodecor{
+      list-style-type: none;
+  }
+
+  .card-header{
+      height: 100px;
+      border: 0px solid black;
+  }
+ .heading-about{
+     margin-top: 20px;
+ }
+
+
+ .float-mobile, .float-mobile:hover{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	background-color:#25D366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 99;
+    text-decoration: none;
+    color: white;
+}
+
+.float, .float:hover{
+	position:fixed;
+	width:240px;
+	height:50px;
+    bottom:40px;
+	right:40px;
+	background-color:#25D366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 99;
+    text-decoration: none;
+    color: white;
+}
+
+.my-float,.my-float:hover{
+    margin-top:17px;
+    
+}
+
+.my-float-mobile{
+	margin-top:8px;
+}
+ 
+.btn-success{
+    background-color:#25D366;
+}
