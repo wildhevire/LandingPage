@@ -114,6 +114,7 @@ body {
     margin: 0;
     padding: 0;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .heading{
@@ -135,6 +136,20 @@ body {
     height: 125px;
     width: 125px;
 }
+.logo-body{
+    position: absolute;
+    float: right;
+    right: 140px;
+    top: 80px;
+    z-index: 99;
+    width: 10px;
+    height: 200px;
+}
+.logo-body img{
+    position: absolute;
+    z-index: 99;
+    width: 130px;
+}
 
 .bg-black{
     background: #272A31;
@@ -143,7 +158,7 @@ body {
     border-bottom:1px solid #DDA74F;
 }
 .navbar-brand{
-    font-family: "Highline";
+    font-family: "Charm";
     margin-left: 15%;;
 }
 .navbar-collapse{
@@ -151,8 +166,10 @@ body {
 }
 
 .nav-link{
+    margin-right: 13px;
     color: #DDA74F !important;
     font-weight: bold;
+    font-size: 20px;
 }
 
 #keuntungan div{
@@ -176,6 +193,8 @@ body {
 .open-hour{
     text-align: center;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     /* For tablets: */
@@ -208,11 +227,16 @@ body {
         margin-top: 0;
 
     }
-    
+    .footer-open-hour{
+        margin-left: 0px;
+    }
+    .footer-open-hour-list{
+        margin-left: 0px;
+    }
   }
 
-  
 @media only screen and (max-width: 768px) {
+    
     /* For tablets: */
     .navbar{
         justify-content: unset;
@@ -257,8 +281,15 @@ body {
     .float{
         display: none;
     }
+    .footer-open-hour{
+        margin-left: 0px;
+    }
+    .footer-open-hour-list{
+        margin-left: 0px;
+    }
+  
   }
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 769px) and (max-width: 1025px) {
     .carousel-text{
         font-size: 30px;
     }
@@ -280,6 +311,7 @@ body {
     .float{
         display: block;
     }
+
   }
   @media only screen and (max-width: 415px) {
     .carousel-text{
@@ -290,6 +322,32 @@ body {
     }
     .text-overlay .font-audrey{
         font-size: 40px;
+    }
+    .logo-body{
+        position: absolute;
+        float: right;
+        right: 10px;
+        top: 80px;
+        z-index: 99;
+        width: 100px;
+        height: 180px;
+    }
+    .logo-body img{
+        position: absolute;
+        z-index: 99;
+        width: 100px;
+        
+    }
+    .navbar-brand img{
+        width: 100px;
+    }
+    
+
+    .footer-open-hour{
+        margin-left: 0px;
+    }
+    .footer-open-hour-list{
+        margin-left: 0px;
     }
   }
   @media only screen and (max-width: 320px) {
@@ -305,6 +363,13 @@ body {
     .btn-carousel{
         font-size: 14px;
     }
+    .footer-open-hour{
+        margin-left: 0px;
+    }
+    .footer-open-hour-list{
+        margin-left: 0px;
+    }
+  
   }
 
 
@@ -350,7 +415,7 @@ body {
 
 .float, .float:hover{
 	position:fixed;
-	width:240px;
+	width:350px;
 	height:50px;
     bottom:40px;
 	right:40px;
@@ -362,17 +427,33 @@ body {
     z-index: 99;
     text-decoration: none;
     color: white;
+    font-size: 24px;
 }
 
 .my-float,.my-float:hover{
-    margin-top:17px;
+    margin-top:13px;
     
 }
 
 .my-float-mobile{
-	margin-top:8px;
+	margin-top:5px;
 }
  
 .btn-success{
     background-color:#25D366;
+}
+
+.carousel-logo{
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    z-index: 99;
+}
+
+
+.footer-open-hour{
+    margin-left: 45px;
+}
+.footer-open-hour-list{
+    margin-left: 45px;
 }
