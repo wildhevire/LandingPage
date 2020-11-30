@@ -4,25 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-      
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '826292811556778');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=826292811556778&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
     
@@ -42,20 +58,23 @@
     </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black py-0">
+      <a class="navbar-brand py-0" href="index.html"><img src="./img/brand.png" class="navbar-brand" style="width: 120px;" loading="lazy"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa fa-bars"></i> Menu
       </button>
-      <a class="navbar-brand py-0" href="index.html"><img src="./img/brand.png" class="navbar-brand" style="width: 120px;"></a>
-      <a href="#" class="wa-button-mobile btn btn-warning btn-orange"><i class="fa fa-whatsapp py-1 px-1" aria-hidden="true" style="font-size: 30px;"></i></a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      
+      <div class="collapse navbar-collapse " id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mr-2"><a href="#about" class="nav-link">About</a></li>
+          <div class="navlink-underline"></div>
           <li class="nav-item mr-2"><a href="#galeri" class="nav-link">Galeri</a></li>
+          <div class="navlink-underline"></div>
           <li class="nav-item mr-2"><a href="#tipeTersedia" class="nav-link">Tipe</a></li>
+          <div class="navlink-underline"></div>
           <li class="nav-item mr-2"><a href="#footer" class="nav-link">Hubungi</a></li>
-          
+          <div class="navlink-underline mb-2"></div>
+          <a href="https://api.whatsapp.com/send?phone=6282167301865&text=Halo gan beli nih" class="wa-button btn btn-warning btn-orange" >Whatsapp Now</a>
         </ul>
-        <a href="https://api.whatsapp.com/send?phone=6282167301865&text=Halo gan beli nih" class="wa-button btn btn-warning btn-orange px-2" >Whatsapp Now</a>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -64,13 +83,14 @@
     <section class="owl-carousel" data-aos="fade-down">
       <div class="content item" data-hash="carousel-vista">
         <div class="image" style="background-image: url('./img/carousel_vista.png')">
-          <div class="overlay">
-            <div class="text-overlay text-center">
-              <h2 class="carousel-text font-audrey">The Crest West Vista</h2>
-              <h3 class="carousel-text"><b>APARTMENT PREMIUM DI JAKARTA BARAT</b></h3>
-              <h4 class="carousel-text">Mulai Dari Rp 600 Jutaan</h4>
-              <a class="btn btn-success btn-carousel" href="#">Minta brosur & Informasi The Crest West Vista</a>
+          <div class="overlay text-center">
+            <div class="text-overlay text-center mb">
+              <h2 class="carousel-text font-audrey carousel-header">The Crest West Vista</h2>
+              <h3 class="carousel-text"><b>APARTMENT PREMIUM</b></h3>
+              <h3 class="carousel-text"><b>DI JAKARTA BARAT</b></h3>
+              <h4 class="carousel-text"><b>Mulai Rp 600 Jutaan</b></h4>
             </div>
+            <a class="btn btn-success btn-carousel" href="#"><div>Minta brosur & Informasi</div> The Crest West Vista</a>
           </div>
         </div>
       </div>
@@ -78,10 +98,11 @@
         <div class="image" style="background-image: url('./img/carousle_puri.png')">
           <div class="overlay">
             <div class="text-overlay text-center">
-              <h2 class="carousel-text font-audrey">The Riveria At Puri</h2>
-              <h3 class="carousel-text"><b>PERUMAHAN MEWAH DI JAKARTA BARAT</b></h3>
-              <h4 class="carousel-text">Mulai Dari Rp 3 M-an</h4>
-              <a class="btn btn-success btn-carousel" href="#">Minta brosur & Informasi The Riveria At Puri</a>
+              <h2 class="carousel-text font-audrey carousel-header">The Riveria At Puri</h2>
+              <h3 class="carousel-text"><b>PERUMAHAN MEWAH</b></h3>
+              <h3 class="carousel-text"><b>DI JAKARTA BARAT</b></h3>
+              <h4 class="carousel-text"><b>Mulai Rp 3 M-an</b></h4>
+              <a class="btn btn-success btn-carousel" href="#"><div>Minta brosur & Informasi</div> The Riveria At Puri</a>
             </div>
           </div>
         </div>
@@ -90,10 +111,11 @@
         <div class="image" style="background-image: url('./img/carousel_Wisteria.png')">
           <div class="overlay">
             <div class="text-overlay text-center">
-              <h2 class="carousel-text font-audrey">New Project Wisteria</h2>
-              <h3 class="carousel-text"><b>PERUMAHAN MEWAH DI JAKARTA TIMUR</b></h3>
-              <h4 class="carousel-text">Mulai Dari Rp 1.4 M-an</h4>
-              <a class="btn btn-success btn-carousel" href="#">Minta brosur & Informasi New Project Wisteria</a>
+              <h2 class="carousel-text font-audrey carousel-header">New Project Wisteria</h2>
+              <h3 class="carousel-text"><b>PERUMAHAN MEWAH</b></h3>
+              <h3 class="carousel-text"><b>DI JAKARTA TIMUR</b></h3>
+              <h4 class="carousel-text"><b>Mulai Rp 1.4 M-an</b></h4>
+              <a class="btn btn-success btn-carousel" href="#"><div>Minta brosur & Informasi</div> New Project Wisteria</a>
             </div>
           </div>
         </div>
@@ -112,7 +134,7 @@
         <div class="row px-6 mx-auto justify-content-center">
           <div class="col-lg-3">
             <div class="card shadow  text-center mx-6" data-aos="fadein" >
-              <img class="card-img-top" src="./img/Projek_vista.jpg">
+              <img class="card-img-top" src="./img/Projek_vista.jpg" loading="lazy">
               <div class="card-body card-body-color">
                 <h4><b>THE CREST WEST VISTA</b></h4>
                 <h5 class="font-abu" style="font-size:18px">Apartment</h5>
@@ -132,7 +154,7 @@
 
           <div class="col-lg-3">
             <div class="card shadow text-center" data-aos="fadein" >
-              <img class="card-img-top" src="./img/Projek_puri.jpg">
+              <img class="card-img-top" src="./img/Projek_puri.jpg" loading="lazy">
               <div class="card-body card-body-color">
                 <h4><b>THE RIVERIA AT PURI</b></h4>
                 <h5 class="font-abu" style="font-size:18px">Perumahan Mewah</h5>
@@ -151,7 +173,7 @@
           </div>
           <div class="col-lg-3">
             <div class="card shadow text-center" data-aos="fadein">
-              <img class="card-img-top" src="./img/Projek_Wisteria.jpg">
+              <img class="card-img-top" src="./img/Projek_Wisteria.jpg" loading="lazy">
               <div class="card-body card-body-color">
                 <h4><b>NEW PROJECT WISTERIA</b></h4>
                 <h5 class="font-abu" style="font-size:18px">Perumahan Mewah</h5>
@@ -176,10 +198,9 @@
     <!-- About Section -->
     <section id="about" class="py-5 card-body-color shadow" data-aos="fade-down">
       <div class="container-fluid px-6 mx-auto row justify-content-center text-left">
-        <img src="./img/about.jpg" alt="..." class="col-lg-4">
+        <img src="./img/about.jpg" alt="..." class="col-lg-4" loading="lazy">
         <div class="about col-lg-5">
           <h2 class="heading heading-about font-audrey">About</h2>
-          <div class="featured-underline"></div>
 
           <h3><b>The Crest West Vista</b></h3>
           <p class="font-abu text-justify">
@@ -205,7 +226,7 @@
         <div class="row px-6 mx-auto justify-content-center">
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Tipe_modren.jpg">
+              <img class="card-img-top" src="./img/Tipe_modren.jpg" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>MODERN LUXURY</b></h4>
                 <h5 class="font-abu" style="font-size:16px">Rp 600 Jutaan - 1.3 Man</h5>
@@ -219,7 +240,7 @@
 
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/tipe_bright.jpg">
+              <img class="card-img-top" src="./img/tipe_bright.jpg" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>BRIGHT ELEGANT</b></h4>
                 <h5 class="font-abu" style="font-size:16px">Rp 600 Jutaan - 1.3 Man</h5>
@@ -232,7 +253,7 @@
           </div>
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/tipe_japandi.png">
+              <img class="card-img-top" src="./img/tipe_japandi.png" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>JAPANDI</b></h4>
                 <h5 class="font-abu" style="font-size:16px">Rp 600 Jutaan - 1.3 Man</h5>
@@ -247,7 +268,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/tipe_sca.png">
+              <img class="card-img-top" src="./img/tipe_sca.png" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>SCANDINAVIAN</b></h4>
                 <h5 class="font-abu" style="font-size:16px">Rp 600 Jutaan - 1.3 Man</h5>
@@ -274,7 +295,7 @@
         <div class="row px-6 mx-auto justify-content-center">
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/unit_studio.jpg">
+              <img class="card-img-top" src="./img/unit_studio.jpg " loading="lazy">
               <div class="card-body text-left">
                 <h4><b>STUDIO</b></h4>
                 <h5 class="font-abu" style="font-size:13px">30.20 - 34.13 m2  (Semi Gross Area)</h5>
@@ -284,7 +305,7 @@
 
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/unit_1.jpg">
+              <img class="card-img-top" src="./img/unit_1.jpg" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>1 BEDROOM</b></h4>
                 <h5 class="font-abu" style="font-size:13px">41.90 - 43.16 m2  (Semi Gross Area)</h5>
@@ -293,7 +314,7 @@
           </div>
           <div class="col-lg-3">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/unit_2.jpg">
+              <img class="card-img-top" src="./img/unit_2.jpg" loading="lazy">
               <div class="card-body text-left">
                 <h4><b>2 BEDROOM</b></h4>
                 <h5 class="font-abu" style="font-size:13px">59.80 - 63.98 m2  (Semi Gross Area)</h5>
@@ -316,7 +337,7 @@
         <div class="row justify-content-center">
           <div class="col-md-3">
             <div class="card text-center card-noborder bg-black">
-              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntung_1.png">
+              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntung_1.png" loading="lazy">
               <div class="card-header bg-black">
                 <h4 class="keuntungan-heading"><b>DP HANYA 5% BISA LANGSUNG HUNI</b></h4>
 
@@ -329,7 +350,7 @@
 
           <div class="col-md-3">
             <div class="card text-center card-noborder bg-black">
-              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntungan_2.png">
+              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntungan_2.png" loading="lazy">
               <div class="card-header bg-black">
                 <h4 class="keuntungan-heading card-title"><b>SUDAH FULL FURNISHED</b></h4>
 
@@ -341,19 +362,19 @@
           </div>
           <div class="col-md-3">
             <div class="card text-center card-noborder bg-black">
-              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntung_3.png">
+              <img class="card-img-top keuntungan-icon mx-auto" src="./img/keuntung_3.png" loading="lazy">
               <div class="card-header bg-black">
                 <h4 class="keuntungan-heading"><b>LOKASI YANG SANGAT STRATEGIS</b></h4>
                 
               </div>
               <div class="card-body">
                 <ul class="text-left ">
-                  <li class="ml-3">10 Menit dari Lippo Mall Puri</li>
-                  <li class="ml-3">10 Menit dari Puri Indah Mall</li>
-                  <li class="ml-3">10 Menit dari PIK</li>
-                  <li class="ml-3">16 Menit dari IPEKA School</li>
-                  <li class="ml-3">20 Menit dari Bandara</li>
-                  <li class="ml-3">30 Menit dari SCBD</li>
+                  <li class="ml-5">10 Menit dari Lippo Mall Puri</li>
+                  <li class="ml-5">10 Menit dari Puri Indah Mall</li>
+                  <li class="ml-5">10 Menit dari PIK</li>
+                  <li class="ml-5">16 Menit dari IPEKA School</li>
+                  <li class="ml-5">20 Menit dari Bandara</li>
+                  <li class="ml-5">30 Menit dari SCBD</li>
                 </ul> 
               </div>
             </div>
@@ -379,23 +400,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/1.jpeg">
+              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/1.jpeg" loading="lazy">
             </div> 
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/2.jpeg">
+              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/2.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/3.jpeg">
+              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/3.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/4.jpeg">
+              <img class="card-img-top" src="./img/STUDIO SCANDIVANIAN/4.jpeg" loading="lazy">
             </div>
           </div>
         </div>
@@ -408,23 +429,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Modern luxury studio/1.jpg">
+              <img class="card-img-top" src="./img/Modern luxury studio/1.jpg" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Modern luxury studio/2.jpg">
+              <img class="card-img-top" src="./img/Modern luxury studio/2.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Modern luxury studio/3.jpg">
+              <img class="card-img-top" src="./img/Modern luxury studio/3.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Modern luxury studio/4.jpg">
+              <img class="card-img-top" src="./img/Modern luxury studio/4.jpg" loading="lazy">
             </div>
           </div>
         </div>
@@ -436,23 +457,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Bright Elegant studio/1.jpg">
+              <img class="card-img-top" src="./img/Bright Elegant studio/1.jpg" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Bright Elegant studio/2.jpg">
+              <img class="card-img-top" src="./img/Bright Elegant studio/2.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Bright Elegant studio/3.jpg">
+              <img class="card-img-top" src="./img/Bright Elegant studio/3.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/Bright Elegant studio/4.jpg">
+              <img class="card-img-top" src="./img/Bright Elegant studio/4.jpg" loading="lazy">
             </div>
           </div>
         </div>
@@ -465,23 +486,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/1.jpg">
+              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/1.jpg" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/2.jpg">
+              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/2.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/3.jpg">
+              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/3.jpg"loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/4.jpg">
+              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/4.jpg" loading="lazy">
             </div>
           </div>
         </div>
@@ -489,7 +510,7 @@
         <div class="row px-6 mx-auto justify-content-center">
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/5.png">
+              <img class="card-img-top" src="./img/1 BR MODERN LUXURY/5.png" loading="lazy">
             </div>
           </div>
         </div>
@@ -502,24 +523,24 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/1.png">
+              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/1.png" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/2.jpg">
+              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/2.jpg" loading="lazy">
              
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/3.jpg">
+              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/3.jpg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/4.jpg">
+              <img class="card-img-top" src="./img/1 BR BRIGHT ELEGANT/4.jpg" loading="lazy">
             </div>
           </div>
         </div>
@@ -532,22 +553,22 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/1.jpeg">
+              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/1.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/2.jpeg">
+              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/2.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/3.jpeg">
+              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/3.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/4.jpeg">
+              <img class="card-img-top" src="./img/1 BR SCANDIVANIAN/4.jpeg" loading="lazy">
             </div>
           </div>
         </div>
@@ -561,23 +582,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/1.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/1.jpeg" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/2.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/2.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/3.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/3.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/4.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/4.jpeg" loading="lazy">
             </div>
           </div>
         </div>
@@ -585,12 +606,12 @@
         <div class="row px-6 mx-auto justify-content-center">
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/5.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/5.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2 BR JAPANDI/6.jpeg">
+              <img class="card-img-top" src="./img/2 BR JAPANDI/6.jpeg" loading="lazy">
             </div>
           </div>
         </div>
@@ -602,23 +623,23 @@
         <div class="row px-6 mx-auto justify-content-center"> 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2BR Scandavinian/1.jpeg">
+              <img class="card-img-top" src="./img/2BR Scandavinian/1.jpeg" loading="lazy">
             </div>
           </div>
 
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2BR Scandavinian/2.jpeg">
+              <img class="card-img-top" src="./img/2BR Scandavinian/2.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2BR Scandavinian/3.jpeg">
+              <img class="card-img-top" src="./img/2BR Scandavinian/3.jpeg" loading="lazy">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="card text-center card-noborder">
-              <img class="card-img-top" src="./img/2BR Scandavinian/4.jpeg">
+              <img class="card-img-top" src="./img/2BR Scandavinian/4.jpeg" loading="lazy">
             </div>
           </div>
         </div>
