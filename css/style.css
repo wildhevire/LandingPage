@@ -162,6 +162,9 @@ body {
     width: 10px;
     height: 200px;
 }
+.navbar-nav{
+    margin-right: 17%;
+}
 .logo-body img{
     position: absolute;
     z-index: 99;
@@ -177,7 +180,7 @@ body {
 }
 .navbar-brand{
     font-family: "Charm";
-    margin-left: 15%;
+    margin-left: 12%;
 }
 
 .nav-link{
@@ -255,6 +258,9 @@ body {
     .navlink-underline{
         display: block;
     }
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
 
 @media only screen and (max-width: 768px) {
@@ -316,7 +322,9 @@ body {
     .navlink-underline{
         display: block;
     }
-  
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
   @media only screen and (min-width: 769px) and (max-width: 1025px) {
     .carousel-text{
@@ -340,7 +348,9 @@ body {
     .float{
         display: block;
     }
-   
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
   @media only screen and (max-width: 415px) {
     .carousel-text{
@@ -385,6 +395,9 @@ body {
     .navlink-underline{
         display: block;
     }
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
   @media only screen and (max-width: 320px) {
     .carousel-text{
@@ -419,6 +432,9 @@ body {
     .navlink-underline{
         display: block;
     }
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
   @media only screen and (max-width: 320px) {
     .carousel-text{
@@ -442,7 +458,9 @@ body {
     .navlink-underline{
         display: block;
     }
-
+    .navbar-nav{
+        margin-right: 0;
+    }
     
   }
 
@@ -469,7 +487,9 @@ body {
         display: block;
     }
 
-    
+    .navbar-nav{
+        margin-right: 0;
+    }
   }
 
 
