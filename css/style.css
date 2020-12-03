@@ -99,10 +99,13 @@ body {
     margin: 0 auto;
     display: none;
 }
-
+.navbar-toggler{
+    font-size: 30px;
+    border: none;
+}
 .btn-carousel{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .keuntungan-underline{
     width: 25rem;
@@ -149,6 +152,8 @@ body {
 .carousel-header{
     font-size: 80px;
 }
+
+
 .keuntungan-icon{
     height: 125px;
     width: 125px;
@@ -293,6 +298,7 @@ body {
     .carousel-text{
         font-size: 30px;
     }
+   
     .text-overlay h3{
         font-size: 35px;
     }
@@ -356,11 +362,20 @@ body {
     .carousel-text{
         font-size: 20px;
     }
+    .overlay{
+        width: 100%;
+    }
+    .text-overlay .carousel-header-2{
+        font-size: 20px;
+    }
     .text-overlay h3{
         font-size: 22px;
     }
     .text-overlay .font-audrey{
         font-size: 40px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5px;
     }
     .logo-body{
         position: absolute;
@@ -380,7 +395,9 @@ body {
     .navbar-brand img{
         width: 100px;
     }
-    
+    .btn-carousel{
+        font-size: 20px;
+    }
 
     .footer-open-hour{
         margin-left: 0px;
@@ -398,6 +415,8 @@ body {
     .navbar-nav{
         margin-right: 0;
     }
+
+    
   }
   @media only screen and (max-width: 320px) {
     .carousel-text{
