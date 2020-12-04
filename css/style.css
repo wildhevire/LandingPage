@@ -100,7 +100,7 @@ body {
     display: none;
 }
 .navbar-toggler{
-    font-size: 30px;
+    font-size: 25px;
     border: none;
 }
 .btn-carousel{
@@ -157,6 +157,7 @@ body {
 .keuntungan-icon{
     height: 125px;
     width: 125px;
+    margin-bottom: 20px;
 }
 .logo-body{
     position: absolute;
